@@ -195,32 +195,39 @@ header {
 }
 
 /*      MODO RESPONSIVE      */
+/* ========================= */
+/* ✅ RESPONSIVE MÓVIL FINAL */
+/* ========================= */
 @media (max-width: 768px) {
 
-  /*  NAVBAR  */
+  /* ===== HEADER Y NAV ===== */
+  header {
+    padding: 15px 10px;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: center;
   }
 
   .logo img {
-    height: 70px;
+    height: 65px;
   }
 
   .menu {
-    position: static;
-    transform: none;
+    position: static !important;
+    transform: none !important;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-top: 15px;
   }
 
-  /*  PRESENTACIONES  */
+  /* ===== SECCIONES GENERALES ===== */
   .presentacion,
   .presentacion2 {
     flex-direction: column;
-    padding: 40px 5%;
+    padding: 40px 5% !important;
     text-align: center;
   }
 
@@ -228,12 +235,16 @@ header {
     max-width: 100%;
   }
 
-  .imagen img {
-    width: 90%;
-    margin-top: 30px;
+  /* ===== IMÁGENES PRINCIPALES ===== */
+  .imagen img,
+  .Proyecto1 img {
+    width: 90% !important;
+    height: auto !important;
+    margin: 20px auto;
+    display: block;
   }
 
-  /*  BOTONES  */
+  /* ===== BOTONES ===== */
   .botones {
     flex-direction: column;
     gap: 15px;
@@ -245,49 +256,61 @@ header {
     text-align: center;
   }
 
-  /*  TEXTO ATRACTIVO  */
+  /* ===== TEXTO ATRACTIVO ===== */
   .texto-atractivo {
-    padding: 30px 20px;
+    padding: 25px 20px;
     font-size: 1rem;
   }
 
-  /*  PROYECTOS  */
+  /* ===== BLOQUES DE PROYECTOS ===== */
   .Proyecto1 {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
 
   .texto-proyecto {
-    width: 100%;
-    margin-left: 0;
+    width: 100% !important;
+    margin-left: 0 !important;
   }
 
-  .Proyecto1 img {
-    width: 90% !important;
-    height: auto !important;
-    margin-bottom: 20px;
+  /* ===== EXPERIENCIA LABORAL (LISTAS) ===== */
+  .texto-proyecto .caracteristicas {
+    padding-left: 0;
+    text-align: left;
   }
 
-  /*  CONTACTO ICONOS  */
+  /* ===== CONTACTO ICONOS ===== */
   .contenedor {
     flex-direction: column;
     align-items: center;
-    padding: 40px 0;
+    padding: 20px 0 !important;
   }
 
   .contenedor2 {
-    width: 120px;
+    width: 120px !important;
     margin-bottom: 15px;
     background-color: rgb(211, 209, 209);
   }
 
   .texto {
-    opacity: 1;
-    transform: none;
+    opacity: 1 !important;
+    transform: none !important;
   }
 
+  /* ===== CARRUSEL 3D ===== */
+  .carousel-3d {
+    height: 300px;
+  }
+
+  .inner {
+    --w: 90px;
+    --h: 70px;
+    top: 20px !important;
+  }
 }
+
 
 /* GIRATORIO */
 .carousel-3d {
